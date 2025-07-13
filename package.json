@@ -2,9 +2,10 @@
   "name": "e-commerce-store",
   "version": "1.0.0",
   "description": "A Full Stack E-commerce website. Using MERN Stack.",
-  "main": "index.js",
+  "main": "backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon backend/server.js",
+    "start": "node backend/server.js"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/buhaynganaman/E-Commerce-Store/issues"
@@ -27,5 +29,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.16.3",
     "stripe": "^18.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
